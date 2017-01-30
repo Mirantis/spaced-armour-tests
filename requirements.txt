@@ -1,0 +1,2 @@
+git+git://github.com/Mirantis/stepler.git
+pytest==3.0.2
