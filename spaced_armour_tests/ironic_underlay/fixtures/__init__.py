@@ -1,8 +1,9 @@
 """
 ---------------
-Global conftest
+Ironic fixtures
 ---------------
 """
+
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -16,13 +17,10 @@ Global conftest
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-from spaced_armour_tests.ironic_underlay.conftest import *  # noqa
-
-from stepler.conftest import *  # noqa
-from stepler.conftest import __all__  # noqa
-from stepler.conftest import pytest_plugins  # noqa
-
+from .chassis import *  # noqa
+from .node import *  # noqa
+from .port import *  # noqa
+from .ironic import *  # noqa
 
 __all__ = sorted([  # sort for documentation
     'ironic_client',
@@ -47,12 +45,4 @@ __all__ = sorted([  # sort for documentation
     'cleanup_chassis',
     'primary_chassis',
     'unexpected_chassis_cleanup',
-
-    'api_ironic_client_v1',
-    'get_api_ironic_client',
-    'ironic_client_v1',
-    'get_api_ironic_steps',
-    'ironic_steps_v1',
-    'api_ironic_steps_v1',
-    'api_ironic_steps',
 ])

@@ -31,8 +31,8 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.ifconfig']
+              'sphinx.ext.intersphinx',
+              'sphinx.ext.ifconfig']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -128,7 +128,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'spaced-armour-tests.tex', u'spaced-armour-tests Documentation',
+    (master_doc, 'spaced-armour-tests.tex',
+     u'spaced-armour-tests Documentation',
      u'Sofiia Andriichenko', 'manual'),
 ]
 
@@ -153,8 +154,6 @@ texinfo_documents = [
      author, 'spaced-armour-tests', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
